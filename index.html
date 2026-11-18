@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: bold;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -33,26 +34,39 @@
             margin-bottom: 20px;
         }
         .company-info {
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             text-align: left;
             font-size: 13px;
             color: #52525b;
-            line-height: 1.6;
+            line-height: 1.3;
         }
         .company-info p {
-            margin: 0 0 12px 0;
-        }
-        .company-info .contact {
-            text-align: center;
-            margin-bottom: 0;
+            margin: 0;
         }
         .company-info a {
             color: #18181b;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: bold;
         }
         .company-info a:hover {
             text-decoration: underline;
+        }
+        .contact-btn {
+            margin-bottom: 24px;
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: white;
+            color: #18181b;
+            border: 1px solid #e4e4e7;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            transition: background-color 0.15s ease;
+        }
+        .contact-btn:hover {
+            background-color: #e4e4e7;
         }
         input {
             width: 100%;
@@ -62,6 +76,7 @@
             border-radius: 4px;
             box-sizing: border-box;
             font-size: 14px;
+            font-weight: bold;
         }
         button {
             width: 100%;
@@ -71,28 +86,11 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: bold;
             font-size: 14px;
         }
         button:hover {
             background-color: #3f3f46;
-        }
-        .contact-btn {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 24px;
-            background-color: white;
-            color: #18181b;
-            border: 1px solid #e4e4e7;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-            transition: background-color 0.15s ease;
-        }
-        .contact-btn:hover {
-            background-color: #e4e4e7;
         }
     </style>
 </head>
@@ -101,15 +99,13 @@
         <img src="GGR Name Logo.jpg" alt="GrayGrayRed Logo" class="logo">
         <div class="company-info">
             <p>Gray Gray Red, LLC develops and operates <a href="https://www.provisionalia.com" target="_blank" rel="noopener noreferrer">Provisionalia.com</a>, a platform that offers watchlists, custom lists, viewing diaries, physical media collections and discovery for film and television. Foundationally, it is built for personal use and for sharing among friends, without the likes, follower counts and public feeds of a social network. The platform is currently in private, invitation-only testing.</p>
-            <p class="contact">Contact: <a href="mailto:frederik@graygrayred.com">frederik@graygrayred.com</a></p>
         </div>
+        <a href="mailto:info@graygrayred.com" class="contact-btn">Contact</a>
         <form onsubmit="event.preventDefault();">
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
             <button type="submit">Log In</button>
         </form>
     </div>
-
-    <a href="mailto:info@graygrayred.com" class="contact-btn">Contact</a>
 </body>
 </html>
