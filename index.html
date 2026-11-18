@@ -23,6 +23,7 @@
             text-align: center;
             width: 100%;
             max-width: 320px;
+            box-sizing: border-box;
         }
         .logo {
             width: 240px;
@@ -52,6 +53,21 @@
         button:hover {
             background-color: #3f3f46;
         }
+        .footer-info {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 13px;
+            color: #71717a;
+            line-height: 1.6;
+        }
+        .footer-info a {
+            color: #18181b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer-info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +77,4 @@
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
             <button type="submit">Log In</button>
-        </form>
-    </div>
-</body>
-</html>
+        </form
