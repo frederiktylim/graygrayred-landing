@@ -11,8 +11,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
             background-color: #f4f4f5;
         }
         .container {
@@ -22,67 +24,19 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
             width: 100%;
-            max-width: 320px;
+            max-width: 420px;
             box-sizing: border-box;
         }
         .logo {
             width: 240px;
             height: auto;
-            margin-bottom: 32px;
+            margin-bottom: 20px;
         }
-        input {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 16px;
-            border: 1px solid #e4e4e7;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #18181b;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        button:hover {
-            background-color: #3f3f46;
-        }
-        .footer-info {
-            margin-top: 24px;
-            text-align: center;
+        .company-info {
+            margin-bottom: 24px;
+            text-align: left;
             font-size: 13px;
-            color: #71717a;
+            color: #52525b;
             line-height: 1.6;
         }
-        .footer-info a {
-            color: #18181b;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .footer-info a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="GGR Name Logo.jpg" alt="GrayGrayRed Logo" class="logo">
-        <form onsubmit="event.preventDefault();">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-        </form>
-    </div>
-
-    <div class="footer-info">
-        <div>Gray Gray Red, LLC, Currently Project: <a href="https://www.provisionalia.com/" target="_blank" rel="noopener noreferrer">Provisionalia.com</a></div>
-        <div><a href="mailto:frederik@graygrayred.com">Contact</a></div>
-    </div>
-</body>
-</html>
+        .company-info p {
